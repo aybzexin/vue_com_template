@@ -68,12 +68,12 @@ class Start
 }
 
 $replaces = [
-    'ProjectName' => 'web_test',
-    'APPKEY'      => 'OC_TEST',
-    'Domain'      => 'test',
-    'GitRemote'   => 'git@git.ayibang.cn:web_dev/web_test.git',
+    'ProjectName' => 'ayb_goods_model',
+    'APPKEY'      => 'OC_goods',
+    'Domain'      => 'gmodel',
+    'GitRemote'   => 'git@git.ayibang.cn:web_dev/ayb_goods_model.git',
 ];
-$traget   = __DIR__ . '/../web_test';
+$traget   = __DIR__ . '/../vue_test';
 $start    = new Start();
 $start->run($traget, $replaces);
 
