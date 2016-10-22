@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+npm-debug.log
+node_modules
+.babelrc
+_rg/.*.data
+conf/used/
+run/*
+.idea/

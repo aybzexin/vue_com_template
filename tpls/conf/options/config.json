@@ -1,0 +1,12 @@
+{
+    "ENV" : "${ENV}",
+        "UC_API_URL"   : "${UC_API_URL}" ,
+        "UC_WEB_URL"   : "${UC_WEB_URL}" ,
+        "BASE_API_URL" : "${BASE_API_URL}",
+        "GUARD_URL"      : "${GUARD_URL}" ,
+        "API_URL"      : "${APP_API_URL}" ,
+        "APPKEY"       : "${APPKEY}",
+        "ENTRY_FILE_NAME"   : "index_${ENV}",
+        "DOMAIN"   : "${DOMAIN}",
+        "OPERA_URL" : "${OPERA_URL}"
+}

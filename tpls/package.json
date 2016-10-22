@@ -1,0 +1,46 @@
+{
+  "name": "prj",
+  "description": "A Vue.js project",
+  "author": "zhonglingxiao <824665478@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0 ---progress --config builds/webpack.dev.conf.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.prod.conf.js",
+     "cdn": "cross-env NODE_ENV=production webpack cdn --progress --hide-modules  --config builds/webpack.prod.conf.js ",
+    "demo": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.demo.conf.js",
+    "pub": "scp -r dist/index.html wangzexin@10.172.225.119:~/devspace/ayibang_wap/src/web_channel/statics/tpls/common/ && scp -r dist/vendor/ wangzexin@10.172.225.119:~/devspace/ayibang_wap/src/web_channel/statics"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.0.0",
+    "vue": "^1.0.0",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "clean-webpack-plugin": "^0.1.10",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^2.22.0",
+    "html-webpack-template": "^5.0.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.2.1",
+    "vue-style-loader": "^1.0.0",
+    "vuex": "^0.8.2",
+    "vux": "^0.1.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.14.1",
+    "webpack_zepto": "^1.0.0"
+  }
+}
