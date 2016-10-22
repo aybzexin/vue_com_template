@@ -53,6 +53,9 @@ class Start
         }
         mkdir($traget);
         shell_exec('cp -rf tpls/* ' . $traget);
+        shell_exec('cp -rf  tpls/.babelrc  '  .  $traget);
+        shell_exec('cp -rf  tpls/.gitignore  '  .  $traget);
+
     }
 
     /**
